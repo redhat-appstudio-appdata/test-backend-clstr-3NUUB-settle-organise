@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-kbcl
+  namespace: psrna-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:c3031e2af67458a1d9ef83ca862bdc54197bed6af1ac2e4eb704baeb35e028f6
+        name: container-image
+        resources: {}
+status: {}
